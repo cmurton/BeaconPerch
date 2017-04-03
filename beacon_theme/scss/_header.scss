@@ -1,0 +1,62 @@
+$top-bar:  rgba( $darkest-gray, .9 );
+
+// .hero {
+//   background: url('images/hero_image.jpg') no-repeat;
+//   min-height: 100vh;
+//   background-size: 100%;
+//   background-position-y: 25%;
+//   background-attachment: fixed;
+//   position: relative;
+//   padding: 0;
+// }
+
+.orbit, .orbit-container {
+  max-height: 100vh;
+}
+
+.top-bar{
+  background: $top-bar;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.top-bar ul {
+  background: transparent;
+}
+
+.dropdown.menu>li.opens-right>.is-dropdown-submenu {
+  background:$top-bar;
+  margin-top: .6rem;
+  border: none;
+}
+
+.menu-text {
+  color: $white;
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    background: $primary-color;
+    color: $white;
+    width: 100%;
+    padding: .5rem;
+}
+
+.scrolldown {
+  text-align: center;
+  position: absolute;
+  bottom: 5rem;
+  width: 100%;
+}
+
+.scrolldown i{
+    font-size: 0;
+    line-height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid $primary-color;
+    color: #CC2925;
+    clear: both;
+}

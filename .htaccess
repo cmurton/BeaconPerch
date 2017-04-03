@@ -1,5 +1,4 @@
 # Perch Runway
 RewriteEngine On
-RewriteCond %{REQUEST_URI} !^/perch 
+RewriteCond %{REQUEST_URI} !^/perch
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule .* /perch/core/runway/start.php [L]

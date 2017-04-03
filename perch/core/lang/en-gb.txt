@@ -307,5 +307,6 @@
     "No content yet?": "No content yet?",
     "Make sure you have added some editable regions into your page, and then visited that page in your browser. Once you have, the regions should show up here.": "Make sure you have added some editable regions into your page, and then visited that page in your browser. Once you have, the regions should show up here.",
     "Read the getting started guide to find out more": "Read the getting started guide to find out more",
-    "%sFile upload size is low.%s You can only upload files up to %sM.": "%sFile upload size is low.%s You can only upload files up to %sM."
+    "%sFile upload size is low.%s You can only upload files up to %sM.": "%sFile upload size is low.%s You can only upload files up to %sM.",
+    "Home page": "Home page"
 }
