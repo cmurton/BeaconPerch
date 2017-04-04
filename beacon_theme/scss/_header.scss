@@ -1,4 +1,4 @@
-$top-bar:  rgba( $darkest-gray, .9 );
+$top-bar: rgba($darkest-gray, .9);
 
 // .hero {
 //   background: url('images/hero_image.jpg') no-repeat;
@@ -10,15 +10,18 @@ $top-bar:  rgba( $darkest-gray, .9 );
 //   padding: 0;
 // }
 
-.orbit, .orbit-container {
+.orbit,
+.orbit-container {
   max-height: 100vh;
 }
 
 .top-bar{
   background: $top-bar;
-  position: fixed;
-  width: 100%;
   z-index: 100;
+}
+
+.top-bar-title {
+  color: $white;
 }
 
 .top-bar ul {
@@ -36,12 +39,12 @@ $top-bar:  rgba( $darkest-gray, .9 );
 }
 
 .bottom-bar {
-    position: absolute;
-    bottom: 0;
-    background: $primary-color;
-    color: $white;
-    width: 100%;
-    padding: .5rem;
+  position: absolute;
+  bottom: 0;
+  background: $primary-color;
+  color: $white;
+  width: 100%;
+  padding: .5rem;
 }
 
 .scrolldown {
@@ -52,11 +55,11 @@ $top-bar:  rgba( $darkest-gray, .9 );
 }
 
 .scrolldown i{
-    font-size: 0;
-    line-height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid $primary-color;
-    color: #CC2925;
-    clear: both;
+  font-size: 0;
+  line-height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid $primary-color;
+  color: #cc2925;
+  clear: both;
 }

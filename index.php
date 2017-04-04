@@ -9,26 +9,20 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-      <div class="top-bar">
+    <div data-sticky-container>
+      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
         <div class="row">
+          <div class="top-bar-title">Beacon Academy</div>
           <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li class="menu-text"><?php perch_content('Site name'); ?></li>
-              <li class="has-submenu">
-                <a href="#0">About Us</a>
-                <ul class="submenu menu vertical" data-submenu>
-                  <li><a href="#0">One</a></li>
-                  <li><a href="#0">Two</a></li>
-                  <li><a href="#0">Three</a></li>
-                </ul>
-              </li>
-              <li><a href="#0">Join Us</a></li>
-              <li><a href="#0">Students</a></li>
-              <li><a href="#0">Parents</a></li>
-              <li><a href="#0">Sixth Form</a></li>
-              <li><a href="#0">Results</a></li>
-              <li><a href="#0">Enrichment</a></li>
-            </ul>
+            <?php
+                perch_pages_navigation(array(
+                    'from-path' => '/about',
+                    'from-level' => 1,
+                    'levels'    => 3,
+                    'template' => 'topbar.html'
+                ));
+            ?>
+          </ul>
           </div>
           <div class="top-bar-right">
             <ul class="menu">
@@ -38,7 +32,8 @@
           </div>
         </div>
       </div>
-      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-pause-on-hover="false">
+    </div>
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-pause-on-hover="false" data-timer-delay="10000">
         <ul class="orbit-container">
 
           <li class="orbit-slide">
