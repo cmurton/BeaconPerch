@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-    <div data-sticky-container>
+    <div data-sticky-container >
       <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
         <div class="row">
           <div class="top-bar-title">Beacon Academy</div>
@@ -66,14 +66,14 @@
          </div>
        </div>
      </div>
-     <div class="scrolldown" data-magellan data-bar-offset>
+     <div class="scrolldown" data-magellan data-bar-offset="40" >
         <a href="#welcome">
           <p>Explore Our School</p>
           <i></i>
         </a>
       </div>
 
-    <section id="welcome" data-magellan-target="welcome">
+    <section id="welcome" data-magellan-target="welcome"  >
       <div class="row">
         <div class="large-7 columns">
           <h1><?php perch_content('Welcome title'); ?></h1>

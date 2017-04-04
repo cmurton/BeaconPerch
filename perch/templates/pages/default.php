@@ -13,6 +13,12 @@
     	'levels'=>1]
     	); ?>
 
+      <?php perch_pages_navigation(array(
+    'from-path'  => '*',
+    'include-parent' => true,
+    'from-level' => 2
+)); ?>
+
     <?php perch_content('Intro'); ?>
 </body>
 </html>
