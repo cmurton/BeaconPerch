@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Beacon Academy</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-      <div class="top-bar" data-sticky-container data-margin-top="0">
+      <div class="top-bar">
         <div class="row">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
@@ -38,10 +38,9 @@
           </div>
         </div>
       </div>
-      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-pause-on-hover="false">
         <ul class="orbit-container">
-          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
-          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+
           <li class="orbit-slide">
             <div>
               <img src="images/hero_image.jpg" alt="">
