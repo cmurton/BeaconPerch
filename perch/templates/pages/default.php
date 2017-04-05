@@ -7,18 +7,34 @@
 	<?php perch_page_attributes(); ?>
 </head>
 <body>
-    <h1><?php perch_content('Main heading'); ?></h1>
+  <?php perch_layout('global.topbar'); ?>
+  <section class="hero" style="background: url(images/_DSC2193.jpg) no-repeat; background-size: cover;">
 
-    <?php perch_pages_navigation([
-    	'levels'=>1]
-    	); ?>
+  </section>
+  <div class="row">
+    <div class="large-3 columns">
+      <h2><?php perch_pages_title(); ?></h2>
 
-      <?php perch_pages_navigation(array(
-    'from-path'  => '*',
-    'include-parent' => true,
-    'from-level' => 2
-)); ?>
+      <?php perch_pages_navigation([
+      	'levels'=>1]
+      	); ?>
 
-    <?php perch_content('Intro'); ?>
+        <?php perch_pages_navigation(array(
+      'from-path'  => '*',
+      'include-parent' => true,
+      'from-level' => 2
+  )); ?>
+    </div>
+    <div class="large-9 columns">
+      <?php perch_content('Intro'); ?>
+    </div>
+  </div>
+
+
+
+    <script src="beacon_theme/bower_components/jquery/dist/jquery.js"></script>
+    <script src="beacon_theme/bower_components/what-input/dist/what-input.js"></script>
+    <script src="beacon_theme/bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="beacon_theme/js/app.js"></script>
 </body>
 </html>
