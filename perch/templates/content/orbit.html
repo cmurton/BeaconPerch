@@ -1,0 +1,31 @@
+
+<perch:repeater id="images" label="Choose Images">
+<perch:before>
+<div class="orbit" role="region" aria-label="Pictures of Beacon School" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-pause-on-hover="false" data-timer-delay="10000">
+  <ul class="orbit-container">
+</perch:before>
+    <li class="orbit-slide">
+      <div>
+        <img src="<perch:content type="image" id="image" label="Image" width="2000"  />" alt="<perch:content type="text" id="alt" label="Alt Text for image" />">
+      </div>
+    </li>
+<perch:after>
+  </ul>
+
+  <div class="scrolldown" data-magellan data-bar-offset="40" >
+     <a href="#welcome">
+       <p>Explore Our School</p>
+       <i></i>
+     </a>
+   </div>
+
+ <div class="bottom-bar">
+   <div class="row">
+     <div class="large-12 column">
+       Text
+     </div>
+   </div>
+ </div>
+</div>
+</perch:after>
+</perch:repeater>
