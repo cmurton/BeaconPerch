@@ -10,47 +10,7 @@
   </head>
   <body>
     <?php perch_layout('global.topbar'); ?>
-      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-pause-on-hover="false" data-timer-delay="10000">
-        <ul class="orbit-container">
-
-          <li class="orbit-slide">
-            <div>
-              <img src="images/hero_image.jpg" alt="">
-            </div>
-          </li>
-          <li class="orbit-slide">
-            <div>
-              <img src="images/_DSC1986.jpg" alt="">
-            </div>
-          </li>
-          <li class="orbit-slide">
-            <div>
-                <img src="images/_DSC1996.jpg" alt="">
-            </div>
-          </li>
-          <li class="orbit-slide">
-            <div>
-              <img src="images/_DSC2018.jpg" alt="">
-            </div>
-          </li>
-        </ul>
-
-        <div class="scrolldown" data-magellan data-bar-offset="40" >
-           <a href="#welcome">
-             <p>Explore Our School</p>
-             <i></i>
-           </a>
-         </div>
-
-       <div class="bottom-bar">
-         <div class="row">
-           <div class="large-12 column">
-             Text
-           </div>
-         </div>
-       </div>
-     </div>
-
+    <?php perch_content("Homepage Slider"); ?>
 
     <section id="welcome" data-magellan-target="welcome"  >
       <div class="row">
@@ -107,9 +67,9 @@
       <?php perch_content('Test'); ?>
     </section>
 
-    <script src="beacon_theme/bower_components/jquery/dist/jquery.js"></script>
-    <script src="beacon_theme/bower_components/what-input/dist/what-input.js"></script>
-    <script src="beacon_theme/bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/4.1.1/what-input.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
     <script src="beacon_theme/js/app.js"></script>
   </body>
 </html>

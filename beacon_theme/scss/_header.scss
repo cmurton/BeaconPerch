@@ -16,7 +16,7 @@ $top-bar: rgba($darkest-gray, .9);
 }
 
 .sticky-container {
-  margin-bottom: -100px;
+  margin-bottom: -92px;
 }
 
 .top-bar{
@@ -25,7 +25,7 @@ $top-bar: rgba($darkest-gray, .9);
 
 }
 
-.top-bar-title {
+.top-bar-title > a{
   color: $white;
   background: transparent url('/images/beacon_logo.svg') no-repeat;
   text-indent: 100%;
@@ -33,22 +33,23 @@ $top-bar: rgba($darkest-gray, .9);
   overflow: hidden;
   width: 343px;
   margin-right: 1rem;
-  height: 71px;
+  height: 60px;
+  display: block;
 }
 
 .top-bar ul {
   background: transparent;
 }
 
-.top-bar-left > ul > li {
-  height: 69px;
+.top-bar-left > ul > li, .top-bar-right > ul > li {
+  height: 75px;
 }
 
 
 
 .dropdown.menu>li.opens-right>.is-dropdown-submenu {
   background:$top-bar;
-  margin-top: .6rem;
+  margin-top: .55rem;
   border: none;
 }
 

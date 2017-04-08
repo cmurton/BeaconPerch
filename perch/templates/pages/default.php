@@ -13,19 +13,17 @@
   </section>
   <div class="row">
     <div class="large-3 columns">
-      <h2><?php perch_pages_title(); ?></h2>
 
-      <?php perch_pages_navigation([
-      	'levels'=>1]
-      	); ?>
 
-        <?php perch_pages_navigation(array(
-      'from-path'  => '*',
-      'include-parent' => true,
+    <?php perch_pages_navigation(array(
+      'from-path'  => '/about',
       'from-level' => 2
+
+
   )); ?>
     </div>
     <div class="large-9 columns">
+    
       <?php perch_content('Intro'); ?>
     </div>
   </div>

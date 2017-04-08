@@ -1,7 +1,7 @@
 <div data-sticky-container >
   <div class="top-bar" data-sticky data-options="marginTop:0;" style="width:100%">
     <div class="row">
-      <div class="top-bar-title">Beacon Academy</div>
+      <div class="top-bar-title"><a href="/">Beacon Academy</a></div>
       <div class="top-bar-left">
         <?php
             perch_pages_navigation(array(

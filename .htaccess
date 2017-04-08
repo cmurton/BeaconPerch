@@ -2,3 +2,6 @@
 RewriteEngine On
 RewriteCond %{REQUEST_URI} !^/perch
 RewriteCond %{REQUEST_FILENAME} !-f
+
+php_value upload_max_filesize 50M
+php_value post_max_size 50M 
