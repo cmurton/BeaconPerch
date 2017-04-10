@@ -5,7 +5,7 @@
       <div class="top-bar-left">
         <?php
             perch_pages_navigation(array(
-                'from-path' => '/about',
+                'from-path' => '/about-us',
                 'from-level' => 1,
                 'levels'    => 3,
                 'template' => 'topbar.html'

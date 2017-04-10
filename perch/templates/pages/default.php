@@ -1,4 +1,10 @@
 <?php if (!defined('PERCH_RUNWAY')) include($_SERVER['DOCUMENT_ROOT'].'/perch/runtime.php'); ?>
+<?php perch_content_create('Page Content', array(
+    'template' => 'blocks.html',
+));
+?>
+</div>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,19 +22,24 @@
 
 
     <?php perch_pages_navigation(array(
-      'from-path'  => '/about',
+      'from-path'  => '/about-us',
       'from-level' => 2
 
 
   )); ?>
     </div>
     <div class="large-9 columns">
-    
-      <?php perch_content('Intro'); ?>
-    </div>
+      <?php perch_pages_breadcrumbs(); ?>
+      <div class="row">
+        <div class="columns large-12">
+          <h1><?php perch_pages_title(); ?></h1>
+        </div>
+      </div>
+
+      <?php
+        perch_content_custom('Page Content', array());
+      ?>
   </div>
-
-
 
     <script src="beacon_theme/bower_components/jquery/dist/jquery.js"></script>
     <script src="beacon_theme/bower_components/what-input/dist/what-input.js"></script>

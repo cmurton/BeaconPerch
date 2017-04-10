@@ -1,0 +1,15 @@
+<perch:repeater id="people-list" label="People">
+<div class="row">
+  <div class="columns large-12">
+    <h2><perch:content id="name" type="text" label="Name" required="true" /></h2>
+  </div>
+  <div class="columns large-3">
+    <img src="<perch:content type="image" id="image" label="Image"/>" alt="<perch:content type="text" id="alt" label="Description" required="true" help="e.g. Photo of MD John Smith with his best wig on" title="true" />" />
+  </div>
+  <div class="columns large-9">
+
+    <perch:content id="body" type="textarea" label="Article body" markdown="true" editor="markitup" />
+  </div>
+</div>
+
+</perch:repeater>
